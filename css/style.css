@@ -1,0 +1,314 @@
+ /*-------- Utilities ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1050px;
+}
+/* Header section design  */
+
+.nav-menu{
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: fff;
+}
+.menu-items ul{
+    display: flex;
+    padding: 0;
+    color: fff;
+}
+.menu-items ul li{
+    list-style: none;
+    margin-right:20px;
+    color: #fff;
+}
+/*------------start------------
+/---- main section design----- /
+-------------------------------*/
+
+.hero-section{
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    
+}
+.main-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    grid-column-gap: 102px;
+}
+.hero-section-title{
+     width: 485px;
+}
+.hero-section-title h1{
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 80px;
+}
+.button{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+    border: 1px solid #E02C6D;
+}
+/* css animation hover effect */
+
+.button:hover{
+    color: #E02C6D;
+    background-color: #2D25A0;
+    border: 1px solid #E02C6D;
+}
+
+.hero-section-image img{
+    width: 100%;
+}
+/* players section started */
+.players-card{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    grid-row-gap: 25px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+
+}
+.player h2{
+    font-weight: 700;
+    font-size: 28px;
+    color: #18191F;
+}
+.player p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* highlight section  */
+
+.highlighted-match{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.match-info{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:65px;
+    align-items: center;
+}
+.match-titles h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: #0A0826;
+}
+.match-titles p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.match-image{
+    width: 567px;
+    height: 427px;
+}
+.match-image img{
+    max-width: 100%;
+}
+
+/* footer style  */
+.main-footer{
+    margin: 50px 0;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 480px;
+    height: 110px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    width: 32px;
+    height: 32px;
+}
+.social-icons ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.social-icons ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+.copyright-text p{
+    margin: 0;
+}
+
+
+/*----------...Starting...--------------\
+|-----responsive design for ipad --------|
+\--------------------------------------*/
+
+@media only screen and (max-width: 1050px) {
+
+    /* responsive design for hero section */
+
+    .container{
+        width: 700px;
+    }
+    .main-contents{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        grid-column-gap: 65px;
+    }
+    .hero-section-title{
+        width: 350px;
+   }
+   .hero-section-title h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 50px;
+    }
+
+    /*responsive design for players section */
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .player img{
+        width: 350px;
+        height: 300px;
+    }
+
+    /* responsive design for match info section*/
+
+    .match-info{
+        grid-column-gap:40px;
+    }
+    .match-titles h2{
+        font-size: 30px;
+    }
+    .match-image{
+        width: 350px;
+        height: 350px;
+    }
+    /* responsive design for footer section  */
+
+    .footer-logo img{
+        width: 380px;
+        height: 80px;
+    }
+
+  }
+
+/*-----------...Starting...--------------\
+|-----responsive design for mobile -------|
+\----------------------------------------*/
+
+  @media only screen and (max-width: 750px) {
+
+    /* removing nav section  */
+
+    .nav-menu{
+        display: none;
+    }
+
+    /* responsive design for hero dection  */
+    .container{
+        width: 500px;
+    }
+    .main-contents{
+        grid-template-columns:1fr;
+        grid-row-gap: 50px;
+    }
+    .hero-section-title{
+        width: 280px;
+   }
+   .hero-section-title{
+    padding-left: 16px;
+   }
+   .hero-section-title h1{
+    font-size: 36px;
+    line-height: 50px;
+
+    }
+
+    /*responsive design for players section */
+
+    .players{
+        justify-content: center;
+        grid-template-columns:1fr;
+    }
+    .player{
+        width: 330px;
+        height: 474px;
+    }
+    .player img{
+        width: 300px;
+        height: 256px;
+    }
+
+    /* responsive design for match info section*/
+    .match-info{
+        grid-template-columns:1fr;
+        grid-row-gap: 50px;
+    }
+
+    .match-titles h2{
+        font-size: 25px;
+    }
+    .match-image img{
+        max-width: 100%;
+    }
+    /* responsive design for footer section  */
+
+    .footer-logo img{
+        width: 280px;
+        height: 80px;
+    }
+   
+
+  }
